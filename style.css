@@ -1,0 +1,203 @@
+/* Navbar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f1e9;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nabar ul li{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #688f4e;
+    padding: 8px 25px;
+    transition: all .6 ease;
+}
+.navbar ul li a:hover{
+    background-color: #b1d182;
+    color: #688f4e;
+    box-shadow: #b1d182;
+}
+/* Akhir navbar */
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: #b1d182;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img/WhatsApp\ Image\ 2022-10-24\ at\ 20.18.35.jpeg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #b1d182; */
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+.headings{
+    font-family: sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin: 40px 0px ;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f1e9;
+    
+}
+#pict{
+    display: flex;
+}
+ h1{
+    color: #b1d182;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: #b1d182;
+}
+#intro p{
+    color: #b1d182;
+}
+/* Akhir homes section */
+/* my picture */
+#mypict{
+    display: flex;
+    flex-direction: column;
+    background-color: #688f4e;
+    color: #f4f1e9;
+    font-family: sans-serif;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    
+}
+/* Akhir my picture */
+/* Service section */
+#service{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #688f4e;
+}
+.headings{
+    color: #b1d182;
+    font-family: sans-serif;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid #688f4e;
+    margin: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(20, 115, 20) 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .10s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 20px white ;
+}
+/* contact me */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #f4f1e9;
+    color: #f4f1e9;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 50%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 20%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white ;
+}
